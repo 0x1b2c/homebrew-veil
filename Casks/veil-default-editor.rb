@@ -1,13 +1,13 @@
-cask "veil" do
+cask "veil-default-editor" do
   version "0.7"
-  sha256 "8832da3bdaf8c130acbfba8d480799357c5d69180d264ccd78b6768336391f20"
+  sha256 "ce5b481ce44ec72e5151c727bbf00bab29fe29a48752993de119fb9adf966ffc"
 
-  url "https://github.com/0x1b2c/Veil/releases/download/v#{version}/Veil.zip"
+  url "https://github.com/0x1b2c/Veil/releases/download/v#{version}/Veil-default-editor.zip"
   name "Veil"
-  desc "A Neovim GUI built for efficiency, not for cool"
+  desc "A Neovim GUI built for efficiency, not for cool (claims file associations)"
   homepage "https://github.com/0x1b2c/Veil"
 
-  conflicts_with cask: "veil-default-editor"
+  conflicts_with cask: "veil"
 
   depends_on macos: ">= :sonoma"
 
