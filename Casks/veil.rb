@@ -9,7 +9,7 @@ cask "veil" do
 
   conflicts_with cask: "veil-default-editor"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Veil.app"
 
