@@ -1,6 +1,6 @@
 cask "veil" do
-  version "0.7"
-  sha256 "8832da3bdaf8c130acbfba8d480799357c5d69180d264ccd78b6768336391f20"
+  version "0.8"
+  sha256 "1728bf1415eaf42c4d7bb97cd0f896a9d672220750a7cdbd618fd0eced9094c8"
 
   url "https://github.com/0x1b2c/Veil/releases/download/v#{version}/Veil.zip"
   name "Veil"
@@ -9,7 +9,7 @@ cask "veil" do
 
   conflicts_with cask: "veil-default-editor"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Veil.app"
 
